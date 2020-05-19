@@ -1,86 +1,108 @@
 
-.main-background {
-  color: #00bcd4;
-  background-color: #b2ebf2;
+.main{
+  padding: 0;
+  background-color: #fff;
 }
-
-.big-heading{
-  padding-top: 6%;
-  padding-bottom: 7%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 5rem;
+.icons{
+  margin-top: 2%;
+  margin-bottom: 0;
   text-align: center;
 }
-.icon-menus{
+.delivery::before{
+  font-family: "FontAwesome";
+  content: "\f0d1";
+  padding-right: 5px;
+  font-style: normal;
+}
+.uk::before{
+  font-family: "FontAwesome";
+  content: "\f024";
+  padding-right: 5px;
+  font-style: normal;
+}
+.help::before{
+  font-family: "FontAwesome";
+  content: "\f27a";
+  padding-right: 5px;
+  font-style: normal;
+}
+.feature-list{
+  list-style: none;
+  padding: 0;
+}
+.feature-class{
+  padding-left: 1.3em;
+}
+.feature-class:before{
+  content: "\f14a"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+  color: #097CDE;
+}
+
+
+.card-feature{
+   margin: 5%;
+   margin-bottom: 3%;
+   margin-top: 3%;
+ }
+.card-feature>.card-title{
+   background: #097CDE;
+   color: white;
+}
+.card-head-title{
+  text-align: center;
+}
+#photo-card-body{
+  padding-bottom:30%;
+  padding-top: 0;
+  height: auto;
+}
+#photo-card-body{
+
+}
+.main-image{
+  content: url('https://rawcdn.githack.com/damian0577/ebay/6b6a2eb37da91baa64004c5b8d00b372bf8527ce/angle.png');
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-  padding-bottom: 5%;
+  align-content: center;
+  max-width: 90%;
+  max-height: 90%;
+  width: 80%;
+  height: 80;
+  margin: auto;
+  transition-duration: .5s;
 }
-.menus{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.9rem;
-  text-align: center;
-  color: #00bcd4;
-}
-.container-menus{
-  padding-left: 8%;
-  padding-right: 8%;
-}
-.menu-element:hover {
-  transform: scale(1.3);
-}
-.small-title{
-    padding-top: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 0.5rem;
-    text-align: center;
-}
-.section-text{
-    padding-top: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-    text-align: center;
-}
-.asset{
-  border-radius: 8px;
-  margin-left: 15%;
-  margin-right: 15%;
-  text-align: center;
-  background-color:#00bcd4;
-  color: white;
+.image{
+  position: absolute;
+  height: 20%;
+  width: 20%;
+  display: block;
+  -webkit-appearance: none;
+  cursor: pointer;
+  align-content: center;
+  border: 2px solid #E2E2E2;
+  bottom: 15px;
 }
 
-.asset-title{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  text-align: center;
-  color: white;
+#image1{
+  content: url('https://rawcdn.githack.com/damian0577/ebay/b423ebe8a3c628508a53fb36135bb3a224af8acd/bottom.png');
+  right: 50%;
+  transform: translate(-70%, 0)
 }
-.value-title{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  text-align: center;
-  color: white;
+#image3{
+  content: url('https://rawcdn.githack.com/damian0577/ebay/b423ebe8a3c628508a53fb36135bb3a224af8acd/top.png');
+  right: 50%;
+  transform: translate(170%, 0)
 }
-.daychange-green-title{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #83EBC4;
+#image2{
+  content: url('https://rawcdn.githack.com/damian0577/ebay/6b6a2eb37da91baa64004c5b8d00b372bf8527ce/angle.png');
+  right: 50%;
+  transform: translate(50%, 0)
 }
-.daychange-red-title{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #EB7C91;
-}
+
+
+#image1:checked ~ .main-image {content: url('https://rawcdn.githack.com/damian0577/ebay/6b6a2eb37da91baa64004c5b8d00b372bf8527ce/bottom.png');}
+#image2:checked ~ .main-image {content: url('https://rawcdn.githack.com/damian0577/ebay/6b6a2eb37da91baa64004c5b8d00b372bf8527ce/angle.png');}
+#image3:checked ~ .main-image {content: url('https://rawcdn.githack.com/damian0577/ebay/6b6a2eb37da91baa64004c5b8d00b372bf8527ce/top.png');}
